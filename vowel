@@ -1,0 +1,17 @@
+include<iostream>
+using namespace std;
+int vcount(char *p){
+        int count = 0;
+        while((*p)!='\0'){
+                if(*p=='a'||*p=='e'||*p=='i'||*p=='o'||*p=='u'||*p=='A'||*p=='E'||*p=='I'||*p=='O'||*p=='U'){
+                        count++;
+                }
+                p++;
+        }
+        return count;
+}
+int main(){
+        char s[]="bvrit";
+        cout<<"vowel count: "<<vcount(s)<<endl;
+        return 0;
+}
