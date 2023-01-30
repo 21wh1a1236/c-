@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+class rect{
+        public: int l,b;
+        public:void area(int l,int b){
+                      int a;
+                      this->l=l;
+                      this->b=b;
+                      a = l*b;
+                      cout<<"Area: "<<a;
+               }
+};
+int main(){
+        rect r;
+        r.area(11,33);
+        return 0;
+}
