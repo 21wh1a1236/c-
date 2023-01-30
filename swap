@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+class A
+{
+        public :  int a;
+         public : void read_a()
+                 {
+                         cout<<"Enter a:";
+                         cin>>a;
+                 }
+                 friend void swap(A);
+};
+class B
+{
+        public :  int b;
+        public : void read_b()
+                 {
+                         cout<<"Enter b :";
+                         cin>>b;
+                 }
+                 friend void swap(B);
+};
+void swap(A s1, B s2)
+{
+        int temp;
+        temp = s1.a;
+        s1.a = s2.b;
+        s2.b = temp;
+        cout<<"After swap :";
+        cout<<"a: "<<s1.a<<endl<<"b: "<<s2.b<<endl;
+}
+int main()
+{
+        A s1;
+        B s2;
+        s1.read_a();
+        s2.read_b();
+        swap(s1,s2);
+}
+
