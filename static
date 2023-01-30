@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+class student{
+        public:
+                static char name[25];
+                static int id;
+                static float bs;
+        public:
+                static void show()
+                {
+                        cout<<name<<id<<bs;
+                }
+                static void display()
+                {
+                        cin>>name>>id>>bs;
+                }
+};
+int main(){
+        student s;
+        s::show();
+        s::display();
+        return 0;
+}
