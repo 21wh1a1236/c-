@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+class base
+{
+        public:
+                int x;
+                void get_data(){
+                        cout << "Enter the value of x: ";
+                        cin >> x;
+                }
+};
+class derive : public base{
+        public:
+                int y;
+        public:
+                void read_data()
+                {
+                        cout << "Enter the value of y:";
+                        cin >> y;
+                }
+                void sum()
+                {
+                        cout << "sum:" << x + y;
+                }
+};
+int main()
+{
+        derive a;
+        a.get_data();
+        a.read_data();
+        a.sum();
+        return 0;
+ }
+~     
