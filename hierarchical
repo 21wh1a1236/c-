@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+class C{
+        public:
+                int x,y;
+        public:
+                void read(){
+                        cout<<"Enter x & y:";
+                        cin>>x>>y;
+                }
+};
+class A: public C{
+        public:
+                void add(){
+                        int a;
+                        a=x+y;
+                        cout<<endl<<"addition:"<<a<<endl;
+                }
+};
+class B: public C{
+        public:
+                void sub()
+                {
+                        int s;
+                        s=x-y;
+                        cout<<endl<<"Subtraction:"<<s<<endl;
+                }
+};
+int main()
+{
+        A a;
+        B b;
+        a.read();
+        a.add();
+        b.read();
+        b.sub();
+        return 0;
+}
