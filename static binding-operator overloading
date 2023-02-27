@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+// Class Definition 
+class A{
+        public:
+                void sub(int a, int b){
+                        cout<<"sub:"<<a-b<<endl;
+                }
+                void sub(int a, int b, int c){
+                        cout<<"sub:"<<a-b-c<<endl;
+                }
+};
+int main(){
+        A obj;
+        obj.sub(1,2);
+        obj.sub(1,2,3);
+        return 0;
+}
+
