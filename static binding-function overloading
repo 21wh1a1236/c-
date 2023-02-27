@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class A{
+        public:
+        void  datatype(int x){
+                cout<<x;
+        }
+        void datatype(char ch){
+                cout<<ch<<endl;
+        }
+        void datatype(float f){
+                cout<<f<<endl;
+        }
+        void datatype(double d){
+                cout<<d<<endl;
+        }
+};
+int main(){
+        A a;
+        a.datatype(10);
+        a.datatype('A');
+        a.datatype(2.5);
+        a.datatype(1236);
+        return 0;
+}
+
